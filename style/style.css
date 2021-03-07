@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+.nav-container a {
+  text-decoration: none;
+  color: black;
+}
+ul.nav-container {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  /* background-color: #f8f8ff; */
+  background-color: #fffafa;
+}
+
+.nav-container li {
+  list-style: none;
+  margin-left: 3.5rem;
+  font-size: 18px;
+}
+
+.list-item:hover {
+  background-color: #def2f1;
+  transform: scale(1.5);
+}
+
+div#name-container {
+  width: 8.5%;
+  height: 4rem;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* margin-left: 1rem; */
+}
+
+#hero-name {
+  font-size: 25px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: white;
+}
+
+.about-me {
+  width: 100%;
+  height: 500px;
+  /* background-color: #f8f8ff; */
+  background-color: #fffafa;
+  display: flex;
+}
+
+.hero-intro {
+  width: 65%;
+}
+
+.hero-image {
+  width: 40%;
+}
+
+.hero-image img {
+  width: 80%;
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+
+.hero {
+  margin: 5rem;
+  margin-left: 8rem;
+  margin-right: 2rem;
+}
+
+/* .intro-brief {
+  width: 50%;
+} */
+
+.im {
+  font-weight: normal;
+}
+
+.intro-heading h1 {
+  font-size: 55px;
+}
+
+.underline {
+  border: 2px solid #def2eb;
+  transform: translate(0px, -10px);
+  width: 38%;
+}
+
+.intro-me {
+  font-size: 28px;
+  line-height: 40px;
+  margin-top: 1rem;
+}
+
+.intro-brief {
+  margin-top: 1rem;
+  font-size: 22px;
+  line-height: 35px;
+  color: grey;
+}
+
+.services {
+  display: flex;
+  width: 100%;
+  background-color: #fffafa;
+}
+
+.web,
+.app {
+  width: 50%;
+}
+
+.app-content,
+.web-content {
+  /* margin-top: 5rem; */
+  margin-left: 15rem;
+}
+
+.underline-head {
+  border: 1px solid #3aafa9;
+  width: 50%;
+}
+
+.service-img {
+  height: 300px;
+  margin-left: 4rem;
+}
+
+.service-content,
+.canDo {
+  width: 55%;
+  transform: translate(42px, -105px);
+}
+
+.service-content p {
+  font-size: 25px;
+  color: grey;
+}
+
+.canDo {
+  font-size: 28px;
+  margin-top: 1.5rem;
+  margin-left: 4rem;
+}
+
+.skills {
+  width: 100%;
+  opacity: 0.5;
+  background-color: #55bcc9;
+}
+.skills-logo {
+  width: 100%;
+  text-align: center;
+}
+
+/* media Query */
+@media only screen and (max-width: 35rem) {
+  ul.nav-container {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    /* background-color: #f8f8ff; */
+    background-color: #fffafa;
+  }
+
+  .nav-container li {
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 15px;
+  }
+
+  .list-item:hover {
+    background-color: #def2f1;
+    transform: scale(1.2);
+  }
+
+  div#name-container {
+    width: 38.5%;
+    height: 4rem;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* margin-left: 1rem; */
+  }
+
+  #hero-name {
+    font-size: 25px;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    color: white;
+  }
+
+  .about-me {
+    width: 100%;
+    height: 100%;
+    /* background-color: #f8f8ff; */
+    background-color: #fffafa;
+    display: block;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero {
+    margin: 0rem;
+    margin-left: 1rem;
+    margin-right: 0rem;
+  }
+
+  .hero-intro {
+    width: 100%;
+  }
+
+  .hero-image img {
+    width: 80%;
+    margin-left: 3rem;
+  }
+
+  .intro-heading {
+    width: 120%;
+  }
+
+  .intro-heading h1 {
+    font-size: 35px;
+  }
+
+  .intro-me {
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 0rem;
+  }
+
+  .intro-brief {
+    margin-top: 1rem;
+    font-size: 18px;
+    line-height: 35px;
+    color: grey;
+  }
+
+  .services {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fffafa;
+  }
+  .web,
+  .app {
+    width: 100%;
+    height: 100%;
+  }
+
+  .app-content,
+  .web-content {
+    margin-top: 0rem;
+    margin-left: 3rem;
+    width: 50%;
+    height: 340px;
+  }
+
+  .underline-head {
+    border: 1px solid #3aafa9;
+    width: 50%;
+  }
+
+  .service-img {
+    height: 300px;
+    margin-left: 0rem;
+  }
+
+  .service-content {
+    width: 100%;
+    transform: translate(50px, -105px);
+  }
+
+  .canDo {
+    width: 100%;
+    transform: translate(15px, -105px);
+  }
+
+  .service-content p {
+    font-size: 18px;
+    color: grey;
+  }
+
+  .canDo {
+    font-size: 23px;
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+  }
+
+  .underline-head {
+    display: none;
+  }
+}
