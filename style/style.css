@@ -129,7 +129,7 @@ div#name-container {
 
 .underline-div {
   border: 0.1px solid grey;
-  margin-left: 2rem;
+  margin-left: 3rem;
   width: 95%;
 }
 
@@ -277,6 +277,15 @@ div#name-container {
 }
 
 .project-description {
+  margin-top: 0.8rem;
+  line-height: 28px;
+  width: 69%;
+  font-size: 16px;
+  font-weight: normal;
+  color: grey;
+}
+
+.project-description-2 {
   margin-top: 0.8rem;
   line-height: 28px;
   width: 69%;
@@ -476,7 +485,7 @@ div#name-container {
   .row {
     display: block;
     width: 100%;
-    height: 500px;
+    height: 100%;
   }
 
   .projects .header {
@@ -520,7 +529,16 @@ div#name-container {
   .project-description {
     margin-top: 0.8rem;
     line-height: 28px;
-    width: 70%;
+    width: 75%;
+    font-size: 16px;
+    font-weight: normal;
+    color: grey;
+  }
+
+  .project-description-2 {
+    margin-top: 0.8rem;
+    line-height: 28px;
+    width: 80%;
     font-size: 16px;
     font-weight: normal;
     color: grey;
