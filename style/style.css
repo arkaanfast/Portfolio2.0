@@ -127,6 +127,12 @@ div#name-container {
   width: 50%;
 }
 
+.underline-div {
+  border: 0.1px solid grey;
+  margin-left: 2rem;
+  width: 95%;
+}
+
 .service-img {
   height: 300px;
   margin-left: 2rem;
@@ -144,18 +150,18 @@ div#name-container {
 }
 
 .canDo {
-  font-size: 28px;
+  font-size: 20px;
   margin-top: 1.5rem;
   margin-left: 4rem;
 }
 
 .skills {
   margin-top: 2rem;
-  width: 20%;
+  margin-left: 7rem;
+  width: 17%;
   height: 80%;
   border: 1px solid #fffafa;
-  background-color: #b4eef3;
-  opacity: 5;
+  background-color: #44d9e6;
 }
 
 .skills-header {
@@ -222,8 +228,88 @@ div#name-container {
   margin-left: 3.5rem;
 }
 
+.projects {
+  width: 100%;
+  background-color: #fffafa;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+.projects .header {
+  font-size: 42px;
+  padding-top: 3rem;
+  margin-left: 14rem;
+}
+
+.project-logo {
+  width: 45%;
+}
+
+.project-img {
+  margin-left: 10rem;
+  width: 500px;
+  height: 500px;
+}
+
+.project-desc {
+  width: 55%;
+  margin-top: 6rem;
+}
+
+.project-desc a {
+  text-decoration: none;
+  color: black;
+}
+
+.project-number {
+  font-size: 40px;
+  font-weight: normal;
+  color: grey;
+}
+
+.project-title {
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.project-description {
+  margin-top: 0.8rem;
+  line-height: 28px;
+  width: 69%;
+  font-size: 16px;
+  font-weight: normal;
+  color: grey;
+}
+
+.source-code {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #fffafa;
+  color: black;
+  border: 2px solid #e7e7e7;
+  margin-top: 1.2rem;
+}
+
+.source-code:hover {
+  background-color: #e7e7e7;
+}
+
 /* media Query */
 @media only screen and (max-width: 35rem) {
+  * {
+    max-width: 100%;
+  }
+
   ul.nav-container {
     padding: 0;
     display: flex;
@@ -335,6 +421,13 @@ div#name-container {
     width: 50%;
   }
 
+  .underline-div {
+    transform: translate(0px, 20px);
+    border: 0.1px solid grey;
+    margin-left: 2rem;
+    width: 80%;
+  }
+
   .service-img {
     height: 300px;
     margin-left: 0rem;
@@ -345,25 +438,22 @@ div#name-container {
     transform: translate(50px, -105px);
   }
 
-  .canDo {
-    width: 100%;
-    transform: translate(15px, -105px);
-  }
-
   .service-content p {
     font-size: 18px;
     color: grey;
   }
 
   .canDo {
-    font-size: 23px;
+    font-size: 16px;
     margin-top: 1.5rem;
     margin-left: 2.5rem;
+    width: 100%;
+    transform: translate(8px, -105px);
   }
 
-  .underline-head {
+  /* .underline-head {
     display: none;
-  }
+  } */
 
   .skills {
     margin-top: 2rem;
@@ -371,12 +461,87 @@ div#name-container {
     width: 70%;
     height: 390px;
     border: 1px solid #fffafa;
-    background-color: #b4eef3;
+    background-color: #44d9e6;
     opacity: 5;
-    position: relative;
+  }
+
+  .skill-2-njs {
+    margin-left: 4.5rem;
   }
 
   .skill-2-fire {
-    margin-left: 1.2rem;
+    margin-left: 1rem;
+  }
+
+  .row {
+    display: block;
+    width: 100%;
+    height: 500px;
+  }
+
+  .projects .header {
+    font-size: 40px;
+    padding-top: 3rem;
+    margin-left: 9rem;
+  }
+
+  .project-logo {
+    width: 100%;
+  }
+
+  .project-img {
+    margin-left: 3rem;
+    width: 380px;
+    height: 380px;
+  }
+
+  .project-desc {
+    width: 78%;
+    margin-top: 0rem;
+    margin-left: 6.5rem;
+  }
+
+  .project-desc a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .project-number {
+    font-size: 40px;
+    font-weight: normal;
+    color: grey;
+  }
+
+  .project-title {
+    font-size: 35px;
+    font-weight: normal;
+  }
+
+  .project-description {
+    margin-top: 0.8rem;
+    line-height: 28px;
+    width: 70%;
+    font-size: 16px;
+    font-weight: normal;
+    color: grey;
+  }
+
+  .source-code {
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #fffafa;
+    color: black;
+    border: 2px solid #e7e7e7;
+    margin-top: 1.2rem;
+  }
+
+  .source-code:hover {
+    background-color: #e7e7e7;
   }
 }
