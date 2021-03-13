@@ -308,7 +308,6 @@ div#name-container {
 }
 
 .source-code {
-  border: none;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -394,6 +393,37 @@ div#name-container {
   font-size: 25px;
   color: grey;
 } */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.github-repo {
+  padding: 16px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #fffafa;
+  color: black;
+  border: 2px solid #e7e7e7;
+  margin-top: 3rem;
+  margin-right: 10rem;
+}
+
+.github-repo a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.github-repo:hover {
+  background-color: #e7e7e7;
+}
 
 /* media Query */
 @media only screen and (max-width: 35rem) {
@@ -572,7 +602,7 @@ div#name-container {
 
   .header {
     width: 50%;
-    font-size: 40px;
+    font-size: 35px;
     padding-top: 3rem;
     margin-left: auto;
     margin-right: auto;
@@ -593,7 +623,7 @@ div#name-container {
   }
 
   .project-img {
-    margin-left: 2rem;
+    margin-left: 1rem;
     width: 380px;
     height: 380px;
   }
@@ -623,7 +653,7 @@ div#name-container {
   .project-description {
     margin-top: 0.8rem;
     line-height: 28px;
-    width: 75%;
+    width: 80%;
     font-size: 16px;
     font-weight: normal;
     color: grey;
@@ -733,5 +763,37 @@ div#name-container {
     color: #fff;
     background-color: #44d9e6;
     border: none;
+  }
+
+  .main-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .github-repo {
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #fffafa;
+    color: black;
+    border: 2px solid #e7e7e7;
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+    margin-left: 0rem;
+  }
+
+  .github-repo a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+
+  .github-repo:hover {
+    background-color: #e7e7e7;
   }
 }
