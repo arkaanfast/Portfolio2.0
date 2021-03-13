@@ -279,12 +279,14 @@ div#name-container {
 }
 
 .project-number {
+  max-width: 50%;
   font-size: 40px;
   font-weight: normal;
   color: grey;
 }
 
 .project-title {
+  max-width: 80%;
   font-size: 35px;
   font-weight: normal;
 }
@@ -333,6 +335,7 @@ div#name-container {
 
 .contact-me {
   width: 100%;
+  background-color: #fffafa;
 }
 
 /* .social-links {
@@ -629,9 +632,9 @@ div#name-container {
   }
 
   .project-desc {
-    width: 78%;
+    width: 75%;
     margin-top: 0rem;
-    margin-left: 6.5rem;
+    margin-left: 6rem;
   }
 
   .project-desc a {
