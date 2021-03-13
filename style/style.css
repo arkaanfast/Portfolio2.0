@@ -800,3 +800,53 @@ div#name-container {
     background-color: #e7e7e7;
   }
 }
+
+@media only screen and (max-width: 25rem) {
+  .nav-container li {
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 10px;
+  }
+
+  .list-item:hover {
+    background-color: #def2f1;
+    transform: scale(1.5);
+  }
+
+  div#name-container {
+    width: 30%;
+    height: 3rem;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* margin-left: 1rem; */
+  }
+
+  #hero-name {
+    font-size: 15px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: white;
+  }
+
+  .skills {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    width: 95%;
+    height: 380px;
+    border: 1px solid #fffafa;
+    background-color: #44d9e6;
+    opacity: 5;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .skills {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    width: 85%;
+    height: 380px;
+    border: 1px solid #fffafa;
+    background-color: #44d9e6;
+    opacity: 5;
+  }
+}
