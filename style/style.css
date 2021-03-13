@@ -249,6 +249,15 @@ div#name-container {
   margin-left: 14rem;
 }
 
+.contact-heading {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: 40px;
+  padding-top: 3rem;
+}
+
 .project-logo {
   width: 45%;
 }
@@ -317,33 +326,24 @@ div#name-container {
   background-color: #e7e7e7;
 }
 
-.row-contact {
+/* .row-contact {
   width: 100%;
   display: flex;
   height: 700px;
-}
+} */
 
 .contact-me {
-  width: 50%;
+  width: 100%;
 }
 
-.social-links {
+/* .social-links {
   width: 50%;
-}
-
-.social-links {
-  margin-top: 20rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  height: 18%;
-  border: 1px solid #fffafa;
-  background-color: #44d9e6;
-}
+} */
 
 #contact-form {
   margin-top: 2rem;
-  margin-left: 13rem;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   max-width: 600px;
   /* border: 1px solid grey; */
@@ -384,7 +384,7 @@ div#name-container {
   border: none;
 }
 
-.social-content ul {
+/* .social-content ul {
   display: flex;
   justify-content: space-evenly;
 }
@@ -393,7 +393,7 @@ div#name-container {
   margin-left: 1rem;
   font-size: 25px;
   color: grey;
-}
+} */
 
 /* media Query */
 @media only screen and (max-width: 35rem) {
@@ -574,7 +574,18 @@ div#name-container {
     width: 50%;
     font-size: 40px;
     padding-top: 3rem;
-    margin-left: 9rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .contact-heading {
+    width: 60%;
+    font-size: 40px;
+    padding-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
   .project-logo {
@@ -582,7 +593,7 @@ div#name-container {
   }
 
   .project-img {
-    margin-left: 3rem;
+    margin-left: 2rem;
     width: 380px;
     height: 380px;
   }
@@ -679,10 +690,6 @@ div#name-container {
   .social-content ul a {
     font-size: 20px;
     color: grey;
-  }
-
-  .contact-me h1 {
-    margin-left: 8rem;
   }
 
   #contact-form {
