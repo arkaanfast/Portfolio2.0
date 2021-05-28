@@ -76,9 +76,9 @@ div#name-container {
   margin-right: 2rem;
 }
 
-/* .intro-brief {
-  width: 50%;
-} */
+.intro-brief {
+  text-align: justify;
+}
 
 .im {
   font-weight: normal;
@@ -146,6 +146,7 @@ div#name-container {
 .canDo {
   width: 70%;
   transform: translate(42px, -105px);
+  text-align: justify;
 }
 
 .service-content p {
@@ -271,6 +272,7 @@ div#name-container {
 .project-desc {
   width: 55%;
   margin-top: 6rem;
+  text-align: justify;
 }
 
 .project-desc a {
