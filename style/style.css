@@ -1,854 +1,144 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap");
-html {
-  scroll-behavior: smooth;
+@import url(//db.onlinewebfonts.com/c/f4c9951744c0ef14010218fc1b2f7938?family=Larsseit);
+
+html body {
+  background-color: black;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 100%;
-  font-family: "Roboto Slab", serif;
-}
-.nav-container a {
+a {
   text-decoration: none;
-  color: black;
-}
-ul.nav-container {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  /* background-color: #f8f8ff; */
-  background-color: #fffafa;
+  color: transparent;
 }
 
-.nav-container li {
-  list-style: none;
-  margin-left: 3.5rem;
-  font-size: 18px;
-}
-
-.list-item:hover {
-  background-color: #def2f1;
-  transform: scale(1.5);
-}
-
-div#name-container {
-  width: 8.5%;
-  height: 4rem;
-  border: 1px solid black;
-  background-color: rgba(0, 0, 0, 0.9);
-  /* margin-left: 1rem; */
-}
-
-#hero-name {
+div .navbar-brand {
   font-size: 25px;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  color: white;
 }
 
-.about-me {
-  width: 100%;
-  height: 500px;
-  /* background-color: #f8f8ff; */
-  background-color: #fffafa;
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: 18px;
+  padding-left: 35px;
+  padding-top: 16px;
+}
+
+.social-container {
+  padding-top: 1.2rem;
+  padding-left: 0px;
   display: flex;
+  list-style: none;
+}
+
+.social-icons {
+  fill: grey;
+}
+
+.social-icons:hover {
+  cursor: pointer;
+  fill: white;
 }
 
 .hero-intro {
-  width: 65%;
-}
-
-.hero-image {
-  width: 40%;
-}
-
-.hero-image img {
-  width: 80%;
-  margin-top: 1rem;
-  margin-left: 5rem;
-}
-
-.hero {
-  margin: 5rem;
-  margin-left: 8rem;
-  margin-right: 2rem;
-}
-
-.intro-brief {
-  text-align: justify;
-}
-
-.im {
-  font-weight: normal;
-}
-
-.intro-heading h1 {
-  font-size: 55px;
-}
-
-.underline {
-  border: 2px solid #def2eb;
-  transform: translate(0px, -10px);
-  width: 38%;
-}
-
-.intro-me {
-  font-size: 28px;
-  line-height: 40px;
-  margin-top: 1rem;
-}
-
-.intro-brief {
-  margin-top: 1rem;
-  font-size: 22px;
-  line-height: 35px;
-  color: grey;
-}
-
-.services {
-  display: flex;
-  width: 100%;
-  height: 500px;
-  background-color: #fffafa;
-}
-
-.web,
-.app {
-  width: 33.3333%;
-}
-
-.app-content,
-.web-content,
-.skills-content {
-  /* margin-top: 5rem; */
-  margin-left: 5rem;
-}
-
-.underline-head {
-  border: 1px solid #3aafa9;
-  width: 50%;
-}
-
-.underline-div {
-  border: 0.1px solid grey;
-  margin-left: 3rem;
-  width: 95%;
-}
-
-.service-img {
-  height: 300px;
-  margin-left: 2rem;
-}
-
-.service-content,
-.canDo {
-  width: 70%;
-  transform: translate(42px, -105px);
-  text-align: justify;
-}
-
-.service-content p {
-  font-size: 25px;
-  color: grey;
-}
-
-.canDo {
-  font-size: 20px;
-  margin-top: 1.5rem;
-  margin-left: 4rem;
-}
-
-.skills {
-  margin-top: 2rem;
-  margin-left: 7rem;
-  width: 17%;
-  height: 80%;
-  border: 1px solid #fffafa;
-  background-color: #44d9e6;
-}
-
-.skills-header {
-  color: black;
-  padding-left: 1rem;
-  padding-top: 1rem;
-  font-size: 25px;
-}
-
-.skills-content {
-  margin-top: 1rem;
-  margin-left: 1rem;
-}
-
-.skill-item {
-  list-style: none;
-  margin-top: 1rem;
-}
-
-.skill-item img {
-  margin-left: 0.2rem;
-  height: 30px;
-  width: 30px;
-}
-
-.skill-item h5 {
-  font-weight: normal;
-  font-size: 18px;
-  display: inline-block;
-  transform: translate(15px, -8px);
-  color: black;
-}
-
-.skill-2 {
-  margin-left: 3rem;
-}
-
-.skill-2-js {
-  margin-left: 4rem;
-}
-
-.skill-2-dj {
-  margin-left: 2.5rem;
-}
-
-.skill-2-dj img {
-  width: 40px;
-  height: 40px;
-}
-
-.skill-2-njs {
-  margin-left: 5rem;
-}
-
-.skill-2-njs img {
-  width: 40px;
-  height: 40px;
-}
-
-.skill-2-fire {
-  margin-left: 1.5rem;
-}
-.skill-2-java {
-  margin-left: 3.5rem;
-}
-
-.projects {
-  width: 100%;
-  background-color: #fffafa;
-}
-
-.row {
-  display: flex;
-  width: 100%;
-  height: 500px;
-}
-
-.header {
-  font-size: 42px;
-  padding-top: 3rem;
-  margin-left: 14rem;
-}
-
-.contact-heading {
-  text-align: center;
-  margin-left: auto;
+  padding-top: 4rem;
   margin-right: auto;
-  width: 50%;
-  font-size: 40px;
-  padding-top: 3rem;
+  margin-left: auto;
 }
 
-.project-logo {
-  width: 45%;
+.hero-intro h1 {
+  font-size: 4rem;
+  line-height: 5.778rem;
+  color: rgb(255, 255, 255);
+  font-family: "Larsseit-Bold", sans-serif;
+  font-weight: 600;
 }
 
-.project-img {
-  margin-left: 10rem;
-  width: 500px;
-  height: 500px;
-}
-
-.project-desc {
-  width: 55%;
+.hero-about-me {
   margin-top: 6rem;
-  text-align: justify;
+  margin-bottom: 2rem;
 }
 
-.project-desc a {
-  text-decoration: none;
-  color: black;
+.hero-about-me .text {
+  font-size: 1.11rem;
+  line-height: 1.77rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: "Larsseit-Bold", sans-serif;
+  font-weight: 500;
 }
 
-.project-number {
-  max-width: 50%;
-  font-size: 40px;
-  font-weight: normal;
-  color: grey;
-}
-
-.project-title {
-  max-width: 80%;
-  font-size: 35px;
-  font-weight: normal;
-}
-
-.project-description {
-  margin-top: 0.8rem;
-  line-height: 28px;
-  width: 69%;
-  font-size: 16px;
-  font-weight: normal;
-  color: grey;
-}
-
-.project-description-2 {
-  margin-top: 0.8rem;
-  line-height: 28px;
-  width: 69%;
-  font-size: 16px;
-  font-weight: normal;
-  color: grey;
-}
-
-.source-code {
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  background-color: #fffafa;
-  color: black;
-  border: 2px solid #e7e7e7;
-  margin-top: 1.2rem;
-}
-
-.source-code:hover {
-  background-color: #e7e7e7;
-}
-
-/* .row-contact {
-  width: 100%;
-  display: flex;
-  height: 700px;
-} */
-
-.contact-me {
-  width: 100%;
-  background-color: #fffafa;
-}
-
-/* .social-links {
-  width: 50%;
-} */
-
-#contact-form {
-  margin-top: 2rem;
+.hero-about-me .skills .skill-card {
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  max-width: 600px;
-  /* border: 1px solid grey; */
-  padding: 15px;
-  border-radius: 5px;
-  background-color: white;
-  margin-bottom: 50px;
+  margin-top: 2rem;
 }
 
-#contact-form label {
-  line-height: 2.7em;
+.hero-about-me .skills .skill-card .card-body {
+  padding-top: 1.4rem;
 }
 
-#contact-form textarea {
-  min-height: 100px;
-  font-size: 14px;
-}
-
-.input-field {
-  width: 100%;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
-  border-radius: 5px;
-  border: 1px solid grey;
-  font-size: 14px;
-}
-
-#submit-btn {
-  font-size: 28px;
-  margin-top: 10px;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #fff;
-  background-color: #44d9e6;
-  border: none;
-}
-
-/* .social-content ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.social-content ul a {
-  margin-left: 1rem;
-  font-size: 25px;
-  color: grey;
-} */
-
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.github-repo {
-  padding: 16px 35px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  background-color: #fffafa;
+.hero-about-me .skills .skill-card .card-title {
+  font-size: 2rem;
+  line-height: 1.77rem;
   color: black;
-  border: 2px solid #e7e7e7;
-  margin-top: 3rem;
-  margin-right: 10rem;
+  font-family: "Larsseit-Bold", sans-serif;
+  font-weight: 600;
 }
 
-.github-repo a {
-  text-decoration: none;
-  color: black;
-  font-size: 30px;
+.hero-about-me .skills .skill-card img {
+  width: 40px;
+  height: 40px;
+  padding-top: 6px;
 }
 
-.github-repo:hover {
-  background-color: #e7e7e7;
+.hero-my-projects {
+  margin-top: 6rem;
 }
 
-/* media Query */
-@media only screen and (max-width: 35rem) {
-  * {
-    max-width: 100%;
+.hero-my-projects .project-row .project-col {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+}
+
+.hero-my-projects .project-row .project-col p {
+  font-size: 1.11rem;
+  line-height: 1.778rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: "Larsseit-Bold", sans-serif;
+  font-weight: 400;
+}
+
+.hero-my-projects .project-row .project-col h5 {
+  font-size: 2rem;
+  /* line-height: 3.778rem; */
+  color: rgb(255, 255, 255);
+  font-family: "Larsseit-Bold", sans-serif;
+  font-weight: 400;
+}
+
+.hero-my-projects .project-row .project-col .project-cards {
+  background: #1f2833;
+}
+
+.top-size-font {
+  font-size: 3rem;
+  line-height: 5.778rem;
+  color: rgb(255, 255, 255);
+  font-family: "Larsseit-Bold", sans-serif;
+  font-weight: 600;
+}
+
+/* For mobile phones */
+@media (max-width: 575px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding-left: 0px;
   }
 
-  ul.nav-container {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    /* background-color: #f8f8ff; */
-    background-color: #fffafa;
+  .hero-intro h1 {
+    font-size: 2rem;
+    line-height: 5.778rem;
   }
 
-  .nav-container li {
-    list-style: none;
-    margin-left: 1.5rem;
-    font-size: 15px;
-  }
-
-  .list-item:hover {
-    background-color: #def2f1;
-    transform: scale(1.2);
-  }
-
-  div#name-container {
-    width: 38.5%;
-    height: 4rem;
-    border: 1px solid black;
-    background-color: rgba(0, 0, 0, 0.9);
-    /* margin-left: 1rem; */
-  }
-
-  #hero-name {
-    font-size: 25px;
-    margin-top: 1rem;
-    margin-left: 0.5rem;
-    color: white;
-  }
-
-  .about-me {
-    width: 100%;
-    height: 100%;
-    /* background-color: #f8f8ff; */
-    background-color: #fffafa;
-    display: block;
-  }
-
-  .hero-image {
-    width: 100%;
-  }
-
-  .hero {
-    margin: 0rem;
-    margin-left: 1rem;
-    margin-right: 0rem;
-  }
-
-  .hero-intro {
-    width: 100%;
-  }
-
-  .hero-image img {
-    width: 80%;
-    margin-left: 3rem;
-  }
-
-  .intro-heading {
-    width: 120%;
-  }
-
-  .intro-heading h1 {
-    font-size: 35px;
-  }
-
-  .intro-me {
-    font-size: 20px;
-    line-height: 40px;
-    margin-top: 0rem;
-  }
-
-  .intro-brief {
-    margin-top: 1rem;
-    font-size: 18px;
-    line-height: 35px;
-    color: grey;
-  }
-
-  .services {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: #fffafa;
-  }
-  .web {
-    width: 100%;
-    height: 290px;
-  }
-
-  .app {
-    width: 100%;
-    height: 360px;
-  }
-
-  .app-content,
-  .web-content {
-    margin-top: 0rem;
-    margin-left: 3rem;
-    width: 60%;
-    height: 340px;
-  }
-
-  .underline-head {
-    border: 1px solid #3aafa9;
-    width: 50%;
-  }
-
-  .underline-div {
-    transform: translate(0px, 20px);
-    border: 0.1px solid grey;
-    margin-left: 2rem;
-    width: 80%;
-  }
-
-  .service-img {
-    height: 300px;
-    margin-left: 0rem;
-  }
-
-  .service-content {
-    width: 100%;
-    transform: translate(50px, -105px);
-  }
-
-  .service-content p {
-    font-size: 18px;
-    color: grey;
-  }
-
-  .canDo {
-    font-size: 16px;
-    margin-top: 1.5rem;
-    margin-left: 2.5rem;
-    width: 100%;
-    transform: translate(8px, -105px);
-  }
-
-  /* .underline-head {
-    display: none;
-  } */
-
-  .skills {
-    margin-top: 2rem;
-    margin-left: 4rem;
-    width: 70%;
-    height: 390px;
-    border: 1px solid #fffafa;
-    background-color: #44d9e6;
-    opacity: 5;
-  }
-
-  .skill-2-njs {
-    margin-left: 4.5rem;
-  }
-
-  .skill-2-fire {
-    margin-left: 1rem;
-  }
-
-  .row {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
-  .header {
-    width: 50%;
-    font-size: 35px;
-    padding-top: 3rem;
-    margin-left: auto;
+  .hero-my-projects .project-row .project-col {
+    /* margin-left: 0.5rem; */
     margin-right: auto;
-    text-align: center;
-  }
-
-  .contact-heading {
-    width: 60%;
-    font-size: 40px;
-    padding-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .project-logo {
-    width: 100%;
-  }
-
-  .project-img {
-    margin-left: 1rem;
-    width: 380px;
-    height: 380px;
-  }
-
-  .project-desc {
-    width: 75%;
-    margin-top: 0rem;
-    margin-left: 6rem;
-  }
-
-  .project-desc a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .project-number {
-    font-size: 40px;
-    font-weight: normal;
-    color: grey;
-  }
-
-  .project-title {
-    font-size: 35px;
-    font-weight: normal;
-  }
-
-  .project-description {
-    margin-top: 0.8rem;
-    line-height: 28px;
-    width: 80%;
-    font-size: 16px;
-    font-weight: normal;
-    color: grey;
-  }
-
-  .project-description-2 {
-    margin-top: 0.8rem;
-    line-height: 28px;
-    width: 80%;
-    font-size: 16px;
-    font-weight: normal;
-    color: grey;
-  }
-
-  .source-code {
-    border: none;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: #fffafa;
-    color: black;
-    border: 2px solid #e7e7e7;
-    margin-top: 1.2rem;
-  }
-
-  .source-code:hover {
-    background-color: #e7e7e7;
-  }
-
-  .row-contact {
-    width: 100%;
-    display: block;
-    height: 100%;
-  }
-
-  .contact-me {
-    width: 100%;
-  }
-
-  .social-links {
-    width: 100%;
-  }
-
-  .social-links {
-    margin-top: 0rem;
-    padding-bottom: 1rem;
-    /* margin-left: auto;
-    margin-right: auto; */
-    width: 100%;
-    height: 25%;
-    border: 1px solid #fffafa;
-    background-color: #44d9e6;
-  }
-
-  .social-content ul {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .social-content ul a {
-    font-size: 20px;
-    color: grey;
-  }
-
-  #contact-form {
-    margin-top: 2rem;
-    margin-left: 0rem;
-    display: block;
-    max-width: 600px;
-    /* border: 1px solid grey; */
-    padding: 15px;
-    border-radius: 5px;
-    background-color: white;
-    margin-bottom: 50px;
-  }
-
-  #contact-form label {
-    line-height: 2.7em;
-  }
-
-  #contact-form textarea {
-    min-height: 100px;
-    font-size: 14px;
-  }
-
-  .input-field {
-    width: 100%;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid grey;
-    font-size: 14px;
-  }
-
-  #submit-btn {
-    font-size: 28px;
-    margin-top: 10px;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: #fff;
-    background-color: #44d9e6;
-    border: none;
-  }
-
-  .main-header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .github-repo {
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 10px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: #fffafa;
-    color: black;
-    border: 2px solid #e7e7e7;
-    margin-top: 2.5rem;
-    margin-right: 1rem;
-    margin-left: 0rem;
-  }
-
-  .github-repo a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-  }
-
-  .github-repo:hover {
-    background-color: #e7e7e7;
-  }
-}
-
-@media only screen and (max-width: 25rem) {
-  .nav-container li {
-    list-style: none;
-    margin-left: 1.5rem;
-    font-size: 10px;
-  }
-
-  .list-item:hover {
-    background-color: #def2f1;
-    transform: scale(1.5);
-  }
-
-  div#name-container {
-    width: 30%;
-    height: 3rem;
-    border: 1px solid black;
-    background-color: rgba(0, 0, 0, 0.9);
-    /* margin-left: 1rem; */
-  }
-
-  #hero-name {
-    font-size: 15px;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    color: white;
-  }
-
-  .skills {
-    margin-top: 2rem;
-    margin-left: 1rem;
-    width: 95%;
-    height: 380px;
-    border: 1px solid #fffafa;
-    background-color: #44d9e6;
-    opacity: 5;
-  }
-}
-
-@media only screen and (max-width: 30rem) {
-  .skills {
-    margin-top: 2rem;
-    margin-left: 1.5rem;
-    width: 85%;
-    height: 380px;
-    border: 1px solid #fffafa;
-    background-color: #44d9e6;
-    opacity: 5;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
   }
 }
